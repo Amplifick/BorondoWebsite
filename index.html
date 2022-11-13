@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borondo Website</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div style="width:.1px; height:.1px; visibility:hidden; overflow:hidden">
+        <img src="/images/BgFrames/Yellow.png"/><img src="/images/BgFrames/Orange.png"/>
+        <img src="/images/BgFrames/DarkPurple.png"/><img src="/images/BgFrames/Green.png"/><img src="/images/BgFrames/LightBlue.png"/>
+        <img src="/images/BgFrames/Red.png"/>
+    </div>
+    <section class="main swiper mySwiper">
+        <div class="text-container">
+            <H2>PERSONAJES</H2>
+        </div>
+        <div class="container">
+            <div class="menu-logo"></div>
+            <div class="menu-logo"></div>
+            <div class="menu-logo"></div>
+        </div>
+
+        <ul class="menu">
+            <li class="menu-btn" id="juega"><a href="#">Juega</a></li>
+            <li class="menu-btn" id="universo"><a href="#">Universo</a></li>
+            <li class="menu-btn" id="olimpiadas"><a href="#">Olimpiadas</a></li>
+            <li class="menu-btn" id="tienda"><a href="#">Tienda</a></li>
+            <li class="menu-btn" id="emprende"><a href="#">Emprende</a></li>
+            <li class="menu-btn" id="nosotros"><a href="#">Nosotros</a></li>
+        </ul>
+
+        <img id="logo" src="/images/Icons/Borondo Logo 1.png" alt="">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="images/BgCharacterText/SahumadoraText.png" alt="" class="character-background image">
+                <img src="images/Characters/SahumadoraCharacter.png" alt="" class="image">
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/BgCharacterText/BenkosText.png" alt="" class="character-background image">
+                <img src="images/Characters/BenkosCharacter.png" alt="" class="image">
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/BgCharacterText/SombraText.png" alt="" class="character-background image">
+                <img src="images/Characters/SombraCharacter.png" alt="" class="image">
+                <img src="images/BgCharacterText/SombraTextFront.png" alt="" class="character-background front image">
+
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/BgCharacterText/LlaneroText.png" alt="" class="character-background image">
+                <img src="images/Characters/LLaneroCharacter.png" alt="" class="image">
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/BgCharacterText/DiabloText.png" alt="" class="character-background image">
+                <img src="images/Characters/DiabloCharacter.png" alt="" class="image">
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/BgCharacterText/DoroteaText.png" alt="" class="character-background image">
+                <img src="images/Characters/DoroteaCharacter.png" alt="" class="image">
+            </div>
+            <div class="slide swiper-slide">
+                <img src="images/BgCharacterText/PalabreroText.png" alt="" class="character-background image">
+                <img src="images/Characters/PalabreroCharacter.png" alt="" class="image">
+            </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn">
+            <img src="/images/Icons/bxs_right-arrow.png" alt="">
+        </div>
+        <div class="swiper-button-prev nav-btn">
+            <img src="/images/Icons/bxs_left-arrow.png" alt="">
+        </div>
+        <img id="creaDigital" src="/images/Icons/CreaDigital.png" alt="">
+
+        
+        <!--<div class="swiper-pagination"></div> -->
+    </section>
+
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+        });
+        swiper.on('transitionStart', function (e){
+            const slideIndex = this.realIndex;
+            const currentSlide = this.slides[slideIndex];
+            console.log(currentSlide);
+            switch(slideIndex){
+                case 0:
+                    document.querySelector(".main").style.backgroundImage = "url('/images/BgFrames/Pink.png')";
+                    break;
+                case 1:
+                    document.querySelector(".main").style.backgroundImage = "url('/images/BgFrames/Yellow.png')";
+                    break;
+                case 2:
+                    document.querySelector(".main").style.backgroundImage = "url('/images/BgFrames/DarkPurple.png')";
+                    break;
+                case 3:
+                    document.querySelector(".main").style.backgroundImage = "url('/images/BgFrames/Green.png')";
+                    break;
+                case 4:
+                    document.querySelector(".main").style.backgroundImage = "url('/images/BgFrames/Red.png')";
+                    break;
+                case 5:
+                    document.querySelector(".main").style.backgroundImage = "url('/images/BgFrames/LightBlue.png')";
+                    break;
+                case 6:
+                    document.querySelector(".main").style.backgroundImage = "url('/images/BgFrames/Orange.png')";
+                    break;
+
+            }
+            /*if(this.activeIndex==1){
+                document.querySelector(".swiper-slide-active").style.background = 'red';
+            }
+            else if(){
+
+            }*/
+        });
+    </script>
+</body>
+</html>

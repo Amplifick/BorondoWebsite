@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.text-container{
+    float: right;
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    top: 53px;
+    right: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: snow;
+}
+
+.text-container h2{
+    font-weight: 500;
+}
+
+.container{
+    float: right;
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.menu-logo{
+    height: 9px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: snow;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/BgFrames/BgMenu.png');
+    padding: 50px;
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateX(-2000px);
+    transition: .4s;
+}
+
+.showmenu{
+    transform: translateX(0);
+}
+
+.menu li{
+    list-style-type: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    color: snow;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.menu-btn{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    border-radius: 40px;
+}
+
+#juega:hover{
+    background-color: #FF6B00;
+    border-radius: 40px;
+}
+
+#universo:hover{
+    background-color: #269300;
+    border-radius: 40px;
+}
+
+#olimpiadas:hover{
+    background-color: #D72424;
+    border-radius: 40px;
+}
+
+#tienda:hover{
+    background-color: #FEC80B;
+    border-radius: 40px;
+}
+
+#emprende:hover{
+    background-color: #007893;
+    border-radius: 40px;
+}
+
+#nosotros:hover{
+    background-color: #FE0BF4;
+    border-radius: 40px;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/images/BgFrames/Pink.png');
+}
+
+#logo{
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    z-index: 12;
+}
+
+.wrapper, .slide{
+    width: 100%;
+    height: 100%;
+}
+
+.slide{
+    overflow: hidden;
+}
+
+.slide::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.0) ;
+    z-index: 10;
+}
+
+.character-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    margin: auto;
+    z-index: -1;
+}
+
+.front{
+    z-index: 1;
+}
+
+.slide .image{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+/* swiper button css*/
+
+.swiper-button-next{
+    right: 100px;
+}
+
+.swiper-button-prev{
+    left: 100px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    display: none;
+}
+
+#creaDigital{
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: 25%;
+}
+
+
