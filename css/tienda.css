@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: #022A66;
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: snow;
+}
+
+/* Sections */
+
+.car{
+    width: 80%;
+    margin: 120px auto;
+    color: snow;
+}
+
+.car h1{
+    line-height: 101.4px;
+    font-weight: 900;
+    font-size: 130px;
+}
+
+.car h2{
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.car b{
+    font-weight: 600;
+}
+
+.car p{
+    font-weight: 275;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.car .row .col1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    margin-right: 100px;
+}
+
+.car .row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.car .row .col img{
+    width: 100%;
+}
+
+.car button{
+    all: unset;
+}
+
+.sect{
+    width: 80%;
+    margin: 120px auto;
+    color: snow;
+}
+
+.sect h1{
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.sect p{
+    font-weight: 275;
+    font-size: 20px;
+}
+
+.sect .row{
+    margin-top: 50px;
+}
+
+.sect .row2{
+    margin-top: 50px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col img{
+    width: 95%;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.row2 .col img{
+    width: 95%;
+}
+
+.row2 .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* Mobile Device */
+@media only screen and (max-width:850px) {
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .car{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .car h1{
+        line-height: 80px;
+        font-weight: 900;
+        font-size: 50px;
+    }
+    
+    .car h2{
+        line-height: 24px;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    
+    .car b{
+        font-weight: 600;
+    }
+    
+    .car p{
+        font-weight: 275;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .car .row .col1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .car .row{
+        flex-wrap: wrap;
+    }
+
+    .car .row .col{
+        margin: auto;
+        width: 50%;
+    }
+
+    .car button img{
+        all: unset;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .sect{
+        text-align: center;
+        width: 80%;
+        margin: 60px auto;
+        color: snow;
+    }
+    
+    .sect h1{
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    .sect p{
+        font-weight: 275;
+        font-size: 15px;
+    }
+    
+    .sect .row{
+        margin-top: 20px;
+    }
+    
+    .sect .row2{
+        margin-top: 20px;
+    }
+
+    .row2 .col img{
+        width: 70%;
+    }
+
+
+}
+

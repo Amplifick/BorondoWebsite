@@ -1,0 +1,143 @@
+body::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+body{
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.text-container{
+    float: right;
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    top: 53px;
+    right: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: snow;
+}
+
+.text-container h2{
+    font-weight: 500;
+}
+
+.container{
+    float: right;
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.menu-logo{
+    height: 9px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: snow;
+}
+
+.menu{
+    top: 0;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/BgFrames/BgMenu.png');
+    padding: 50px;
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateX(-2000px);
+    transition: .4s;
+}
+
+.showmenu{
+    transform: translateX(0);
+}
+
+.menu li{
+    list-style-type: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    color: snow;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.menu-btn{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    border-radius: 40px;
+}
+
+#juega:hover{
+    background-color: #FF6B00;
+    border-radius: 40px;
+}
+
+#universo:hover{
+    background-color: #269300;
+    border-radius: 40px;
+}
+
+#olimpiadas:hover{
+    background-color: #D72424;
+    border-radius: 40px;
+}
+
+#tienda:hover{
+    background-color: #FEC80B;
+    border-radius: 40px;
+}
+
+#emprende:hover{
+    background-color: #007893;
+    border-radius: 40px;
+}
+
+#nosotros:hover{
+    background-color: #FE0BF4;
+    border-radius: 40px;
+}
+
+/* Mobile Device */
+@media only screen and (max-width:850px) {
+    .text-container{
+        right: 160px;
+    }
+    
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li{
+        margin-bottom: 20px;
+    }
+}
